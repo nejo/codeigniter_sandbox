@@ -1,2 +1,3 @@
-user_guide
-app/logs/
+app/config/database.php
+
+app/logs
