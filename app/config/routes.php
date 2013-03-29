@@ -38,8 +38,18 @@
 |
 */
 
-$route['default_controller'] = "welcome";
+$route['default_controller'] = "pages";
 $route['404_override'] = '';
+
+// Remapping but duplicating content for Google :S
+$route['static/(:any)'] = "pages/$1";
+
+$route['welcome/(:num)'] = "welcome/language/$1";
+
+$route['(about|about_us|what_about)'] = "pages/view/about";
+
+// All to the static pages controller, there will be the check for showing 404
+//$route['(:any)'] = 'pages/view/$1';
 
 
 /* End of file routes.php */

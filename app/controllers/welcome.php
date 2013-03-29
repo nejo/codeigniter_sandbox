@@ -19,7 +19,27 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		$this->load->view('welcome/welcome_message');
+	}
+
+	public function language($lang = 1)
+	{
+		$data = array(
+			1 => array(
+				'language' => 'English',
+				'message'  => 'Welcome to the regexp route sample',
+			),
+			2 => array(
+				'language' => 'Français',
+				'message'  => 'Bienvenue sur l&rsquo;échantillon itinéraire regex',
+			),
+			3 => array(
+				'language' => 'Español',
+				'message'  => 'Bienvenidos a la página de ejemplo de rutas con regexp',
+			),
+		);
+
+		$this->load->view('welcome/language_message', $data[$lang]);
 	}
 }
 
