@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'codeigniter_sandbox.local';
+$config['base_url']	= '';
 
 /*
 |--------------------------------------------------------------------------
@@ -26,7 +26,7 @@ $config['base_url']	= 'codeigniter_sandbox.local';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------

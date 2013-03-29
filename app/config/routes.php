@@ -38,13 +38,17 @@
 |
 */
 
-$route['default_controller'] = "pages";
+$route['default_controller'] = "welcome";
 $route['404_override'] = '';
 
 // Remapping but duplicating content for Google :S
 $route['static/(:any)'] = "pages/$1";
 
 $route['welcome/(:num)'] = "welcome/language/$1";
+
+$route['news/create'] = 'news/create';
+$route['news/(:any)'] = 'news/view/$1';
+$route['news'] = 'news';
 
 $route['(about|about_us|what_about)'] = "pages/view/about";
 

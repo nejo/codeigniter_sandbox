@@ -1,0 +1,1 @@
+The news are successfully saved
